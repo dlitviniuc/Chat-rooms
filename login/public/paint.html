@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War room</title>
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="sidebar" class="chat__sidebar">
+        <h2>Pick a color</h2>
+        <div>
+            <input type="color" id="color" value="#ff0000" onchange="getColorVal(color.value)" style="height:30px; width:200px; padding:0px"/>
+        </div>
+        <div id="sidebarusers">
+
+        </div>
+    </div>
+    <div id="map" class="map">
+        <canvas id="image" class="map" style="position: absolute; left: 230px; top:30px;"></canvas>
+    </div>
+    <div id="cell" class="cell">
+    </div>
+    <script id="sidebar-template" type="text/html">
+        <h2 class="room-title">{{room}}</h2>
+        <h3 class="list-title">Users</h3>
+        <ul class="users">
+            {{#users}}
+                <li>{{username}}</li>
+            {{/users}}
+        </ul>
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.8.0/qs.min.js"></script>
+    <script src="./js/paint.js"></script>
+    
+</body>
+</html>

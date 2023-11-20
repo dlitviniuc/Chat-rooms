@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Chat App Login</title>
+        <link rel="icon" href="./img/favicon.png">
+        <link rel="stylesheet" href="./css/styles.min.css">
+    </head>
+    <body>
+        <div class="centered-form">
+            <div class="centered-form__box">
+                <h1>Login</h1>
+                <form id="data" action="">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" name="username" placeholder="Username" required>
+                    <label for="pwd">Password</label>
+                    <input id="password"  type="password" name ="password" placeholder="*********" required>
+                    <a href="./register.html" style="font-size: 14px">Register</a>
+                    <button id="login">Login</button>
+                    <label id="BadData" style="color:red; visibility: hidden;" >Wrong credentials</label>
+                </form>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./js/login.js"></script>
+    </body>
+</html>

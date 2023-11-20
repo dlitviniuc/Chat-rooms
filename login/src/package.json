@@ -1,0 +1,32 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "chat with login",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "dan litviniuc",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.11",
+    "@types/node": "^20.9.0",
+    "assert-rejects": "^1.0.0",
+    "cairo": "^0.1.0-alpha.3",
+    "dtslint": "^4.2.1",
+    "fabric": "^5.3.0",
+    "js-yaml": "^4.1.0",
+    "jsdom": "^22.1.0",
+    "mocha": "^10.2.0",
+    "nan": "^2.18.0",
+    "pixelmatch": "^5.3.0",
+    "pkg-config": "^1.1.1",
+    "pngjs2": "^2.0.0",
+    "pureimage": "^0.4.13",
+    "simple-get": "^4.0.1",
+    "standard": "^17.1.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {}
+}

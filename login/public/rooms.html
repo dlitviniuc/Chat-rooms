@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Rooms</title>
+        <link rel="icon" href="./img/favicon.png">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div id="sidebar" class="chat__sidebar">
+            <div>
+                <h2>Create your room</h2>
+            </div>
+            <div>
+                <p>
+                    <input type="text" id="roomnum" placeholder="0-150" required>
+                </p>
+                <button id="create-room">Open Room</button>
+                <button id="paint-room">War Room</button>
+            </div>
+            <div>
+                <h2>Open rooms</h2>
+            </div>
+        </div>
+        <script id="room-template" type="text/html">
+            <div style="background: rgb(128, 52, 128);" class="room">
+                <hr>
+                <p id="{{roomnum}}"  class="room">
+                    <span class="room__name">Number: {{roomnum}}</span>
+                    <span class="room__meta">Users: {{users}}</span>
+                </p>
+                <hr>
+            </div>
+        </script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.8.0/qs.min.js"></script>
+        <script src="./js/rooms.js"></script>
+    </body>
+</html>
